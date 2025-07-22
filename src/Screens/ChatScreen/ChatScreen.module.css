@@ -104,3 +104,20 @@
     color: 1d1f1e;
     border-radius: 15px;
 }
+
+.Header_photoname button{
+    margin-left: 20px;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+
+
+@media (max-width: 700px) {
+  .Header_photoname button {
+    display: block;
+  }
+}

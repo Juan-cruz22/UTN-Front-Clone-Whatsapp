@@ -47,6 +47,9 @@ const ChatScreen = () => {
         <div className={style.Wallpaper}>
             <div className={style.HeaderChat}>
                 <div className={style.Header_photoname}>
+                    <button>
+                        <i className="bi bi-caret-left" onClick={() => window.history.back()}></i>
+                    </button>
                     <img src={contactSelected.avatar} />
                     <div>
                         <h2>{contactSelected.name}</h2>
