@@ -1,0 +1,84 @@
+.ContainerChats{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #161817;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    min-width: 340px;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.Header h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.Header .Icon{
+    width: 15%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header .Icon i{
+    color: white;
+    font-size: 16px;
+    stroke-width: 50px;
+}
+
+.SearchBarContainer{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-radius: 40px;
+    background-color: rgb(63, 63, 63);
+}
+
+.SearchIcon{
+    color: white;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.SearchBarContainer input{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.ListOptions{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    list-style: none;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ListOptions li{
+    border: 1px solid rgb(75, 75, 75);
+    color: rgb(122, 122, 122);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+

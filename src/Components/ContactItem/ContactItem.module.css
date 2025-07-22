@@ -1,0 +1,50 @@
+*{
+    text-decoration: none;
+}
+
+.contact_item{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.contact_item:hover{
+    background-color: rgb(59, 59, 59);
+}
+
+.contact_info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 10px;
+}
+
+.contact_info_name img{
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.contact_info_message{
+    margin-left: 10px;
+}
+
+.contact_info_message h2{
+    color: white;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.contact_info_message p{
+    color: rgb(110, 110, 110);
+    font-family: Arial;
+    font-size: 13px;
+}
+
+.contact_info_time span{
+    color: rgb(151, 151, 151);
+    font-family: Arial;
+    font-size: 12px;
+}

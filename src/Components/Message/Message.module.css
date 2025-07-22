@@ -1,0 +1,47 @@
+
+.message_container {
+	display: flex;
+	margin: 5px auto;
+	overflow: auto;
+	width: 90%;
+}
+
+.mine {
+	justify-content: flex-end;}
+
+.other {
+	justify-content: flex-start;
+}
+
+.message_bubble{
+	max-width: 70%;
+	padding: 10px;
+	border-radius: 15px;
+	position: relative;
+	color: #c4d5cd;
+	font-family: Arial;
+	font-size: 14px;
+	.mine & {
+		background-color: #144c37;
+	}
+	.other & {
+		background-color: #242625;
+	}
+}
+
+.message_time {
+	display: block;
+	font-size: 0.75rem;
+	color: gray;
+	text-align: right;
+	margin-top: 5px;
+}
+
+
+.message_bubble button {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	color: white;
+	cursor: pointer;
+}

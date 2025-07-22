@@ -1,0 +1,43 @@
+.form_container {
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0;
+    z-index: 2;
+}
+
+.message_form {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    border: none;
+}
+
+.message_input {
+    flex: 1;
+    height: 35px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    font-size: 14px;
+    background-color: #242625;
+    padding-left: 30px;
+    color: #c4d5cd;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+
+.message_form button{
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #c4d5cd;
+    background-color: #242625;
+    cursor: pointer;
+    width: 60px;
+}

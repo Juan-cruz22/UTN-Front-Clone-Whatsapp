@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #161817;
+}
+
+.sidebar {
+  min-width: 400px;
+  overflow: hidden;
+}
+
+.chat {
+  flex: 1;
+  background-color: red;
+  overflow-y: auto;
+}
