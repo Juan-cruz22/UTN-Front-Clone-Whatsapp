@@ -2,7 +2,7 @@ const contacts = [
     {
     id: 1,
     name: 'Marge',
-    description: 'Homero... ¿qué estás haciendo en el sótano?',
+    description: 'Hmmm...',
     avatar: '/Images/Marge.jpg',
     lastConnection: '20:13',
     connectionStatus: 'online',
@@ -28,7 +28,7 @@ const contacts = [
     {
     id: 2,
     name: 'Lisa',
-    description: 'Papá, ¿podés pensar por una vez?',
+    description: 'Si alguien me necesita, estaré en mi habitación.',
     avatar: '/Images/Lisa.png',
     lastConnection: '20:00',
     connectionStatus: 'offline',
@@ -54,7 +54,7 @@ const contacts = [
 {
     id: 3,
     name: 'Bart',
-    description: 'Ay caramba',
+    description: '¡Cómete mis calzoncillos!',
     avatar: '/Images/Bart.png',
     lastConnection: 'ahora',
     connectionStatus: 'online',
@@ -79,7 +79,7 @@ const contacts = [
 {
     id: 4,
     name: 'Sr. Burns',
-    description: '¡Simpson, está despedido!',
+    description: 'Excelente',
     avatar: '/Images/Burns.jpg',
     lastConnection: '08:43',
     connectionStatus: 'offline',
@@ -104,8 +104,8 @@ const contacts = [
 {
     id: 6,
     name: 'Barney',
-    description: '¡No sé dónde está tu auto, pero fue una gran noche!',
-    avatar: '/Images/barney.png',
+    description: 'Necesito un trago',
+    avatar: '/Images/barney.jpg',
     lastConnection: 'ayer',
     connectionStatus: 'offline',
     messages: [
@@ -129,7 +129,7 @@ const contacts = [
 {
     id: 7,
     name: 'Estupido',
-    description: 'Vecino estúpido y sensual',
+    description: 'Difundir con valentía la buena palabra',
     avatar: '/Images/Ned.png',
     lastConnection: 'ayer',
     connectionStatus: 'online',
@@ -158,7 +158,7 @@ const contacts = [
 {
     id: 8,
     name: '+1 212 555-1234',
-    description: 'Abuelo cascarrabias y olvidadizo',
+    description: 'Me duelen las rodillas',
     avatar: '/Images/abuelosimpsons.png',
     lastConnection: 'hace 1 hora',
     connectionStatus: 'offline',

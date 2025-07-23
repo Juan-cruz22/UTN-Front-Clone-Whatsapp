@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MessagesList from '../../Components/MessagesList/MessagesList';
 import { NewMessageForm } from '../../Components/NewMessageForm/NewMessageForm';
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { getContactById } from "../../Services/contactServices";
 import style from './ChatScreen.module.css';
 
@@ -50,7 +50,9 @@ const ChatScreen = () => {
                     <button>
                         <i className="bi bi-caret-left" onClick={() => window.history.back()}></i>
                     </button>
-                    <img src={contactSelected.avatar} />
+                    <Link to={`/contact/${contact_id}/description`}>
+                        <img src={contactSelected.avatar} />
+                    </Link>
                     <div>
                         <h2>{contactSelected.name}</h2>
                         <span>

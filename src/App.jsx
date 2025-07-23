@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ChatScreen from './Screens/ChatScreen/ChatScreen';
 import ContactScreen from "./Screens/ContactScreen/ContactScreen";
+import ContactDescription from "./Screens/ContactDescription/ContactDescription";
 import { Route, Routes, useLocation, useMatch } from 'react-router-dom';
 import style from './App.module.css';
 
@@ -10,7 +11,6 @@ function App() {
 
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
 
-  // Escuchar cambios de tamaño de pantalla
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 700);
@@ -41,6 +41,7 @@ function App() {
                 </div>
               }
             />
+            <Route path="/contact/:contact_id/description" element={<ContactDescription />} />
             <Route path="/contact/:contact_id/messages" element={<ChatScreen />} />
           </Routes>
         </div>
