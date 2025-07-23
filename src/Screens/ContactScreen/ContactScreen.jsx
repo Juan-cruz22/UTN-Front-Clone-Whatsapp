@@ -3,7 +3,7 @@ import { useState } from "react";
 import ContactList from '../../Components/ContactList/ContactList'
 import {getContactList} from '../../Services/contactServices'
 import style from './ContactScreen.module.css'
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import { CiSearch } from "react-icons/ci";
 import { Route } from "react-router";
 
 
@@ -15,13 +15,9 @@ const ContactScreen = () =>{
         <div className={style.ContainerChats}>
             <div className={style.Header}>
                 <h1>WhatsApp</h1>
-                <div className={style.Icon}>
-                    <i class="bi bi-chat-left-dots"></i>
-                    <i class="bi bi-three-dots-vertical"></i>
-                </div>
             </div>
             <div className={style.SearchBarContainer}>
-                <span className={style.SearchIcon}><i class="bi bi-search"></i></span>
+                <span className={style.SearchIcon}><i><CiSearch/></i></span>
                 <input placeholder="Buscar un chat o iniciar uno nuevo" type="text"></input>
             </div>
             <div className={style.ListOptions}>

@@ -41,7 +41,7 @@ const ChatScreen = () => {
         setShowConfirm(false);
     };
 
-    if (!contactSelected) return <div>Cargando chat...</div>;
+    if (!contactSelected) return null;
 
     return (
         <div className={style.Wallpaper}>
