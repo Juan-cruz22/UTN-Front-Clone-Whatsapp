@@ -8,6 +8,8 @@ import style from './App.module.css';
 function App() {
   const location = useLocation();
   const isChatRoute = useMatch("/contact/:contact_id/messages");
+  const isDescriptionRoute = useMatch("/contact/:contact_id/description");
+
 
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
 
@@ -20,8 +22,8 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const showSidebar = !isMobile || (isMobile && !isChatRoute);
-  const showChat = !isMobile || (isMobile && isChatRoute);
+const showSidebar = !isMobile || (isMobile && !isChatRoute && !isDescriptionRoute);
+const showChat = !isMobile || (isMobile && (isChatRoute || isDescriptionRoute));
 
   return (
     <div className={style.container}>

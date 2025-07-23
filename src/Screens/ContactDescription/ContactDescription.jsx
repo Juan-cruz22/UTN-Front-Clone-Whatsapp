@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getContactById } from "../../Services/contactServices";
-import style from './ContactDescription.module.css'; // (si tenés un archivo de estilos)
+import style from './ContactDescription.module.css';
 
 function ContactDescription() {
     const { contact_id } = useParams();
