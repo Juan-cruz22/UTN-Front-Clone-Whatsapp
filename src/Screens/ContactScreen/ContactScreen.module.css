@@ -69,3 +69,8 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 340px) {
+    .SearchBarContainer{
+        width: 300px;
+    }    
+}
