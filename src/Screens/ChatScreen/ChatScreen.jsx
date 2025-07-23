@@ -3,7 +3,11 @@ import MessagesList from '../../Components/MessagesList/MessagesList';
 import { NewMessageForm } from '../../Components/NewMessageForm/NewMessageForm';
 import { Link, useParams } from "react-router";
 import { getContactById } from "../../Services/contactServices";
+import { FaArrowLeft } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
+import { IoEllipsisVertical } from "react-icons/io5";
 import style from './ChatScreen.module.css';
+
 
 const ChatScreen = () => {
     const { contact_id } = useParams();
@@ -47,9 +51,7 @@ const ChatScreen = () => {
         <div className={style.Wallpaper}>
             <div className={style.HeaderChat}>
                 <div className={style.Header_photoname}>
-                    <button>
-                        <i className="bi bi-caret-left" onClick={() => window.history.back()}></i>
-                    </button>
+                        <FaArrowLeft className={style.Arrow} onClick={() => window.history.back()} />
                     <Link to={`/contact/${contact_id}/description`}>
                         <img src={contactSelected.avatar} />
                     </Link>
@@ -63,12 +65,8 @@ const ChatScreen = () => {
                     </div>
                 </div>
                 <div className={style.Header_icons}>
-                    <i className="bi bi-search"></i>
-                    <i
-                        className="bi bi-three-dots-vertical"
-                        onClick={() => setShowConfirm(true)}
-                        style={{ cursor: 'pointer' }}
-                    ></i>
+                    <CiSearch/>
+                    <IoEllipsisVertical className={style.Ellipsis} onClick={() => setShowConfirm(true)}/>
                 </div>
             </div>
 
