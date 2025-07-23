@@ -12,7 +12,7 @@ function ContactDescription() {
         setContact(contactData);
     }, [contact_id]);
 
-    if (!contact) return <div>Cargando descripción...</div>;
+    if (!contact) return null;
 
     return (
         <div className={style.contact_description_container}>
