@@ -50,20 +50,20 @@ const ChatScreen = () => {
     return (
         <div className={style.Wallpaper}>
             <div className={style.HeaderChat}>
-                <div className={style.Header_photoname}>
-                        <FaArrowLeft className={style.Arrow} onClick={() => window.history.back()} />
+                <FaArrowLeft className={style.Arrow} onClick={() => window.history.back()} />
                     <Link to={`/contact/${contact_id}/description`}>
+                    <div className={style.Header_photoname}>
                         <img src={contactSelected.avatar} />
-                    </Link>
-                    <div>
-                        <h2>{contactSelected.name}</h2>
-                        <span>
-                            {contactSelected.connectionStatus === 'offline'
-                                ? 'Last Connection: ' + contactSelected.lastConnection
-                                : 'Online'}
-                        </span>
+                        <div>
+                            <h2>{contactSelected.name}</h2>
+                            <span>
+                                {contactSelected.connectionStatus === 'offline'
+                                    ? 'Last Connection: ' + contactSelected.lastConnection
+                                    : 'Online'}
+                            </span>
+                        </div>
                     </div>
-                </div>
+                    </Link>
                 <div className={style.Header_icons}>
                     <CiSearch/>
                     <IoEllipsisVertical className={style.Ellipsis} onClick={() => setShowConfirm(true)}/>
